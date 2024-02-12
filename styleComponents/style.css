@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --main-bg-color: black;
+    --main-text-color: #F6F6F6;
+    --main-destaque-color: #22D4FD;
+}
+
+
+body {
+    height: 100vh;
+    background-color: var(--main-bg-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: auto;
+    height: 100px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegationConteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.navegationConteiner>a {
+    color: var(--main-destaque-color);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.navegationConteiner>a:hover {
+    text-decoration: underline 4px solid var(--main-destaque-color);
+}
+
+
+main {
+
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.leftConteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.textConteiner {
+    align-items: center;
+}
+
+.tittleText {
+    width: 593px;
+    height: auto;
+    font-family: "Krona One", sans-serif;
+    font-size: 36px;
+}
+
+.aboutMeText {
+    width: 593px;
+    height: auto;
+    font-size: 24px;
+}
+
+.boldText {
+    font-family: "Krona One", sans-serif;
+    font-size: 36px;
+    color: var(--main-destaque-color);
+}
+
+.subText {
+    width: 593px;
+    height: 168px;
+    font-size: 24px;
+}
+
+.buttonsConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 385px;
+    gap: 25px;
+}
+
+.buttonsConteiner>p {
+    font-family: "Krona One", sans-serif;
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ion-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    color: var(--main-destaque-color);
+}
+
+.buttonType {
+
+    width: 375px;
+    height: 80px;
+    padding: 16px;
+    border: solid 1px var(--main-destaque-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--main-destaque-color);
+    text-decoration: none;
+
+    transition: .6s;
+}
+
+.buttonType:hover {
+    box-shadow: 0 0 20px var(--main-destaque-color);
+}
+
+.profilePicture {
+    width: 488px;
+    border-radius: 16px;
+}
+
+
+
+footer {
+    width: auto;
+    height: 80px;
+    background-color: var(--main-destaque-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>p {
+    color: var(--main-bg-color);
+    font-size: 24px;
+    font-weight: 600;
+}
