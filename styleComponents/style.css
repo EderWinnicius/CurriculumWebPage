@@ -8,15 +8,15 @@
 }
 
 :root {
-    --main-bg-color: black;
-    --main-text-color: #FFF6E9;
-    --main-destaque-color: #22D4FD;
+    --cor-primaria: #070F2B;
+    --cor-secundaria: #9290C3;
+    --cor-tercearia: #535C91;
 }
 
 
 body {
     height: 100vh;
-    background-color: var(--main-bg-color);
+    background-color: var(--cor-primaria);
 
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ body {
 header {
     width: auto;
     height: 100px;
-    background-color: var(--main-bg-color);
+    background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@ header {
 }
 
 .navegationConteiner>a {
-    color: var(--main-destaque-color);
+    color: var(--cor-tercearia);
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
@@ -47,13 +47,13 @@ header {
 }
 
 .navegationConteiner>a:hover {
-    text-decoration: underline 4px solid var(--main-destaque-color);
+    text-decoration: underline 4px solid var(--cor-tercearia);
 }
 
 
 main {
 
-    color: var(--main-text-color);
+    color: var(--cor-secundaria);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,7 +88,7 @@ main {
 }
 
 .boldText {
-    color: var(--main-destaque-color);
+    color: var(--cor-tercearia);
 }
 
 .subText {
@@ -107,7 +107,7 @@ main {
 
 .buttonsConteiner>p {
     font-family: "Krona One", sans-serif;
-    color: var(--main-text-color);
+    color: var(--cor-secundaria);
     font-size: 24px;
     font-weight: 600;
 }
@@ -116,7 +116,7 @@ ion-icon {
     width: 32px;
     height: 32px;
     margin-right: 10px;
-    color: var(--main-destaque-color);
+    color: var(--cor-tercearia);
 }
 
 .buttonType {
@@ -124,20 +124,20 @@ ion-icon {
     width: 375px;
     height: 80px;
     padding: 16px;
-    border: solid 1px var(--main-destaque-color);
+    border: solid 1px var(--cor-tercearia);
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    color: var(--main-destaque-color);
+    color: var(--cor-tercearia);
     text-decoration: none;
 
     transition: .6s;
 }
 
 .buttonType:hover {
-    box-shadow: 0 0 20px var(--main-destaque-color);
+    box-shadow: 0 0 20px var(--cor-tercearia);
 }
 
 .profilePicture {
@@ -181,18 +181,26 @@ ion-icon {
 }
 
 
-
 footer {
     width: auto;
     height: 80px;
-    background-color: var(--main-destaque-color);
+    background-color: var(--cor-tercearia);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 footer>p {
-    color: var(--main-bg-color);
+    color: var(--cor-primaria);
     font-size: 24px;
     font-weight: 600;
+}
+
+.IconsFooterConeteiner{
+    display: flex;
+    flex-direction: row;
+    color: var(--cor-primaria);
+    margin-top: 10px;
+    gap: 30px;
 }
