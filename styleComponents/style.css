@@ -9,8 +9,9 @@
 
 :root {
     --cor-primaria: #070F2B;
-    --cor-secundaria: #9290C3;
-    --cor-tercearia: #535C91;
+    --cor-secundaria: #FFF6E9;
+    --cor-tercearia: #40A2E3;
+    --cor-quartenaria: #12639a;
 }
 
 
@@ -39,52 +40,69 @@ header {
 }
 
 .navegationConteiner>a {
-    color: var(--cor-tercearia);
-    text-decoration: none;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     transition: 1s;
 }
 
 .navegationConteiner>a:hover {
     text-decoration: underline 4px solid var(--cor-tercearia);
+    color: var(--cor-tercearia);
+}
+
+.Nav {
+    color: var(--cor-quartenaria);
+    text-decoration: none;
+}
+
+.actived {
+    text-decoration: underline 4px solid var(--cor-tercearia);
+    color: var(--cor-tercearia);
 }
 
 
 main {
-
     color: var(--cor-secundaria);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 100px;
+    padding: 15px;
 }
 
 .leftConteiner {
-    width: auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
 }
 
 .textConteiner {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .tittleText {
-    width: 593px;
+    width: 90%;
     height: auto;
     font-family: "Krona One", sans-serif;
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .aboutMeText {
-    width: 593px;
-    height: auto;
-    font-size: 24px;
+    width: 70%;
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 .boldText {
@@ -92,44 +110,46 @@ main {
 }
 
 .subText {
-    width: 593px;
+    width: 90%;
     height: 168px;
-    font-size: 24px;
+    font-size: 1.6rem;
 }
 
 .buttonsConteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 385px;
+    width: 100%;
     gap: 25px;
+    padding: 25px;
+    text-align: center;
 }
 
 .buttonsConteiner>p {
     font-family: "Krona One", sans-serif;
     color: var(--cor-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
+    width: 100%;
 }
 
 ion-icon {
     width: 32px;
     height: 32px;
     margin-right: 10px;
-    color: var(--cor-tercearia);
 }
 
 .buttonType {
 
-    width: 375px;
-    height: 80px;
+    min-width: 375px;
+    min-height: 80px;
     padding: 16px;
     border: solid 1px var(--cor-tercearia);
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-tercearia);
     text-decoration: none;
 
@@ -140,14 +160,18 @@ ion-icon {
     box-shadow: 0 0 20px var(--cor-tercearia);
 }
 
+.leftConteiner {
+    display: flex;
+    justify-content: center;
+}
+
 .profilePicture {
-    width: 488px;
+    width: 60%;
     border-radius: 16px;
 }
 
 .cardConteiner {
-    width: 820px;
-    height: auto;
+    width: 75%;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -162,17 +186,13 @@ ion-icon {
 }
 
 .tittleConteinerCard>spam {
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
 .tittleCard {
-    font-size: 28px;
+    font-size: 1.8rem;
     text-decoration: underline;
-    margin-bottom: 5px;
-}
-
-.textCard {
-    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .couseList {
@@ -180,10 +200,14 @@ ion-icon {
     text-decoration: none;
 }
 
+.textCard {
+    font-size: 1.5rem;
+}
+
 
 footer {
     width: auto;
-    height: 80px;
+    height: 100px;
     background-color: var(--cor-tercearia);
     display: flex;
     flex-direction: column;
@@ -193,14 +217,72 @@ footer {
 
 footer>p {
     color: var(--cor-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
-.IconsFooterConeteiner{
+.IconsFooterConeteiner {
     display: flex;
     flex-direction: row;
-    color: var(--cor-primaria);
     margin-top: 10px;
     gap: 30px;
+}
+
+.logoType {
+    color: var(--cor-secundaria);
+}
+
+@media only screen and (max-width: 1300px) {
+    .navegationConteiner>a {
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: 1s;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin: 50px;
+    }
+
+    .textConteiner {
+        width: 100%;
+    }
+
+    .leftConteiner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        gap: 2rem;
+    }
+
+
+    .rightConteiner {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .profilePicture {
+        width: 40%;
+        border-radius: 8px;
+    }
+
+    .aboutMeText {
+        width: 100%;
+    }
+
+    .cardConteiner {
+        width: 100%;
+        text-align: initial;
+    }
+
+
+
 }
