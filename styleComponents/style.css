@@ -233,12 +233,20 @@ footer>p {
 }
 
 @media only screen and (max-width: 1300px) {
+    .navegationConteiner {
+        width: 100%;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
     .navegationConteiner>a {
-        padding: 1rem;
-        font-size: 1.2rem;
+        padding: 6%;
+        font-size: 1.5rem;
         font-weight: 600;
         transition: 1s;
     }
+
+
 
     main {
         display: flex;
