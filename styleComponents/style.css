@@ -18,14 +18,9 @@
 body {
     height: 100vh;
     background-color: var(--cor-primaria);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 header {
-    width: auto;
     height: 100px;
     background-color: var(--cor-primaria);
     display: flex;
@@ -40,7 +35,7 @@ header {
 }
 
 .navegationConteiner>a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     transition: 1s;
 }
@@ -65,9 +60,8 @@ main {
     color: var(--cor-secundaria);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
     padding: 15px;
 }
 
@@ -79,6 +73,8 @@ main {
 }
 
 .textConteiner {
+    
+    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,15 +89,15 @@ main {
 }
 
 .tittleText {
-    width: 90%;
     height: auto;
     font-family: "Krona One", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .aboutMeText {
-    width: 70%;
-    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -110,17 +106,15 @@ main {
 }
 
 .subText {
-    width: 90%;
-    height: 168px;
-    font-size: 1.6rem;
+    width: auto;
+    font-size: 1rem;
 }
 
 .buttonsConteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    gap: 25px;
+    gap: 10px;
     padding: 25px;
     text-align: center;
 }
@@ -141,8 +135,8 @@ ion-icon {
 
 .buttonType {
 
-    min-width: 375px;
-    min-height: 80px;
+    width: 375px;
+    height: 80px;
     padding: 16px;
     border: solid 1px var(--cor-tercearia);
     border-radius: 8px;
@@ -160,48 +154,33 @@ ion-icon {
     box-shadow: 0 0 20px var(--cor-tercearia);
 }
 
-.leftConteiner {
+.rightConteiner {
     display: flex;
     justify-content: center;
 }
-
 .profilePicture {
-    width: 60%;
+    width: 45%;
     border-radius: 16px;
 }
 
-.cardConteiner {
-    width: 75%;
-    margin: 15px;
+.curriculoexp{
+    width: 90%;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
+    gap: 1rem;
 }
 
-.tittleConteinerCard {
+.cardConteiner{
+    padding: 1rem;
+    align-items: center;
+}
+
+.tittleConteinerCard{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5px;
-}
-
-.tittleConteinerCard>spam {
-    font-size: 1.8rem;
-}
-
-.tittleCard {
-    font-size: 1.8rem;
-    text-decoration: underline;
-    margin-bottom: 1rem;
-}
-
-.couseList {
-    list-style: none;
-    text-decoration: none;
-}
-
-.textCard {
-    font-size: 1.5rem;
+    align-items: center;
 }
 
 
